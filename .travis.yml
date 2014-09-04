@@ -1,6 +1,6 @@
 # reference: http://www.objc.io/issue-6/travis-ci.html
 
 language: objective-c
-# before_install: cd Example && pod install && cd -
+before_install: cd Example && pod install && cd -
 script:
 - xcodebuild test -workspace Example/isUnitTesting.xcworkspace -scheme isUnitTesting  -destination 'platform=iOS Simulator,name=iPhone Retina (4-inch)' ONLY_ACTIVE_ARCH=NO
