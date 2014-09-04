@@ -37,6 +37,8 @@ You can use this following :
 }
 ```
 
+That's all!
+
 ## Author
 
 azu, azuciao@gmail.com
