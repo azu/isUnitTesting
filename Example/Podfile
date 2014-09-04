@@ -1,0 +1,10 @@
+target 'isUnitTesting', :exclusive => true do
+  pod "isUnitTesting", :path => "../"
+end
+
+target 'Tests', :exclusive => true do
+  pod "isUnitTesting", :path => "../"
+
+  pod 'Specta', '~> 0.2.1'
+  pod 'Expecta'
+end
