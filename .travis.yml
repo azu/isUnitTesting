@@ -3,4 +3,4 @@
 language: objective-c
 # before_install: cd Example && pod install && cd -
 script:
-- xctool test -workspace Example/isUnitTesting.xcworkspace -scheme isUnitTesting -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+- xcodebuild test -workspace Example/isUnitTesting.xcworkspace -scheme isUnitTesting  -destination 'platform=iOS Simulator,name=iPhone Retina (4-inch)' ONLY_ACTIVE_ARCH=NO
